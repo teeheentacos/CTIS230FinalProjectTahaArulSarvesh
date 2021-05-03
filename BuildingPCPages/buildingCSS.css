@@ -147,7 +147,7 @@ div.nav {
 /* Custom font for title*/
 @font-face {
     font-family: myfont;
-    src: url('myFont.ttf');
+    src: url('myFont.TTF');
 }
 
 /*Body rules */
