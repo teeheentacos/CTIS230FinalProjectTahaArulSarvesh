@@ -147,7 +147,7 @@ div.nav {
 /* Custom font for title*/
 @font-face {
     font-family: myfont;
-    src: url('../myFont.ttf');
+    src: url('myFont.TTF');
 }
 
 /*Body rules */
@@ -162,6 +162,7 @@ div.content{
   border-color:rgb(15, 98, 182);
   border-width: 6px;
   background-color: white;
+  font-size:2em;
 
 }
 
