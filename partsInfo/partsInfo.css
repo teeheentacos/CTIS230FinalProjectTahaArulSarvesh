@@ -145,7 +145,7 @@ div.nav:hover{
 /* Custom font for title*/
 @font-face {
   font-family: myfont;
-  src: url('../myFont.ttf');
+  src: url('myFont.ttf');
 }
 
 /*Body rules */
@@ -160,7 +160,7 @@ border-style: outset;
 border-color:rgb(15, 98, 182);
 border-width: 6px;
 background-color: white;
-
+font-size:2em;
 }
 
 body{
@@ -173,4 +173,49 @@ padding:20px;
 text-align: center;
 color: white;
 font-size: 1.25em;
+}
+
+.sources {
+  font-size: 0.6em;
+}
+
+#parts {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#cpu {
+  width: 30%;
+  float: right;
+}
+
+#cpuFan {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#ram {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+#gpu {
+  width: 50%;
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+#gpu2 {
+  width: 45%;
+  float: right;
+  padding-right: 10px;
+  padding-left: 10px;
 }
