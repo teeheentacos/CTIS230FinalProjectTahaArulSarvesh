@@ -124,14 +124,15 @@
 /*Nav bar at the top of every page*/
   div.flexBox{
     display:flex;
-    margin-left: 29%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 div.nav {
     font-size: 1.3em;
     font-family:Arial;
     text-align:center;
-    width:10%;
+    width:50%;
     border-style:solid;
     border-color:black;
     background-color:lightsteelblue;
@@ -165,6 +166,14 @@ div.content{
   font-size:2em;
 }
 
+h3 {
+  text-align:center;
+}
+
+h2 {
+  text-align: center;
+}
+
 body{
   background-color:lightgrey
 }
@@ -177,6 +186,18 @@ footer{
   font-size: 1.25em;
 }
 
-div.intro h2 {
-    text-align: center;
+img {
+  width: 50%;
+}
+
+div.pictures {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+div.content p{
+  margin-left: 5%;
+  margin-right: 5%;
 }

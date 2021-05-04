@@ -122,7 +122,7 @@
   }
 
 /*Nav bar at the top of every page*/
-  div.flexBox{
+  div.buttonBox{
     display:flex;
     margin-left: 29%;
 }
@@ -150,7 +150,7 @@ div.nav {
     src: url('myFont.TTF');
 }
 
-/*Body rules */
+/*rules for all pages */
 
 div.content{
   margin-left: 10%;
@@ -165,6 +165,10 @@ div.content{
   font-size:2em;
 }
 
+div.content p{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 body{
   background-color:lightgrey
 }
@@ -175,4 +179,127 @@ footer{
   text-align: center;
   color: white;
   font-size: 1.25em;
+  margin-top:20px;
+}
+
+p.sources {
+  font-size: 0.6em;
+}
+
+a.footerlink{
+  text-decoration: none;
+  color: white;
+}
+
+a.footerlink:hover{
+  color:lightslategray;
+}
+
+div.flexBox{
+  display: flex;
+}
+
+img.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*rules for the CPU page*/
+
+button#IntelButton , button#AMDButton{
+  background-color: white;
+  font-family: Arial;
+  border-style: outset;
+  border-color:rgb(15, 98, 182);
+  border-width: 6px;
+  font-size:1em;
+  margin-top: 3%;
+}
+
+button#IntelButton{
+  margin-left:15%;
+}
+
+button#AMDButton{
+  margin-left:27%;
+}
+
+button#IntelButton:hover , button#AMDButton:hover{
+  background-color:lightslategray;
+  border-color:rgb(15, 98, 182);
+}
+
+div#cpuLayout{
+  display: grid;
+  grid-template-columns:50% 50% ;
+  text-align: center;
+  margin-top: 3%;
+}
+
+/* rules for the installing MoBo page*/
+div.caseBox{
+  display: grid;
+  grid-template-columns:30% 30% 30%;
+  margin-left:20%;
+
+}
+
+/*rules for the setting up page*/
+img#screwdriver{
+  width: 30%;
+}
+
+img#zipties{
+  transform: rotate(90deg);
+  width: 20%;
+}
+
+img#pliers{
+  width: 30%;
+}
+
+/*rules of rM.2 page*/
+img#M2Unlock, img#M2Lock{
+  width:30%;
+  height:30%;
+}
+
+/*rules of mobo page*/
+img#ATXMOBO, img#MicroATXMOBO, img#MiniITXMOBO{
+  position: absolute;
+  width:15%;
+  height:auto;
+  display:none;
+}
+/*rules for storage page */
+img#sataCable{
+  width:20%;
+}
+img#driveCage{
+  width:60%
+}
+
+/*rules for GPU page*/
+img#GPUSlots{
+  width:25%;
+}
+
+img#GPU{
+  width:40%
+}
+
+/*rules for PSU page*/
+ul#PSUList{
+  margin-left:15%;
+}
+
+/*rules for turning on page*/
+a#windowslink{
+  color:lightslategrey;
+  text-decoration:none;
+}
+
+a#windowslink:hover{
+  color:lightsteelblue;
 }
