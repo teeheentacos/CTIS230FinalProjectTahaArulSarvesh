@@ -11,7 +11,7 @@
         <header>
             <p>Ultimate PC Building Guide</p>
 
-            <div class="flexBox">
+            <div class="buttonBox">
                 <div class="nav">
                     <a href="../landingPage.html">Home Page</a>
                 </div>
@@ -53,12 +53,56 @@
           </div>
           <div class = "content">
           <h1 style="text-align:center">Installing the CPU and Cooler</h1>
-          <p> sub header with installing CPU, table for AMD vs Intel installing picture on each column<br>
-                sub header with installing Cooler, table split into stock cooler and radiator
+            <p>Before any part is actually put in the case we want to assemble a majority of the motherboard outside of the case to make assembly easier.
+                Unpackage your motherboard and set it on your workspace.<strong>Do not remove your CPU</strong> just yet, it is very sensitive so we only want to handle it when necessary.
+                Explore the buttons below for mounting an Intel CPU vs an AMD CPU.
             </p>
-          <p> click the next page button to learn more! </p>
+            <div class="flexBox">
+            <button id="IntelButton">Show Guide for Installing Intel</button> <button id="AMDButton">Show Guide for Installing AMD</button>
+            </div>
+
+            <div id="cpuLayout">
+                <div id="Intel"><p>For Intel CPUs the motherboard socket should have a metal tray around the CPU socket and a small metal lever.Press down on that lever and pull it gently to the side to 
+                    open the CPU tray. Now remove the CPU from it's packaging. Make sure to <strong>hold it by the edges</strong> as touching the pins on the bottom or the top will damage it.Now locate an
+                    arrow on one of the corners of the CPU, there will be a corresponding arrow on the CPU socket indicating how to align the CPU. Additionally, Intel CPU's should also have two notches 
+                    that line up with the CPU socket. Once you have opened the socket and orientated the CPU, drop it into the socket:<em> it should fit effortlessly</em>.
+                    Now close the CPU tray and then push the lever back down to lock the CPU tray. This part might require a little more pressure. Now your CPU is installed and we are ready to install the cooler.</p>
+                    <img id = "intelCPU" src="../BuildingPCPages/imagesBuilding/cpuimage1.jpg" alt = "Intel CPU Socket" class="center">
+                    <p>Most Intel CPUs come with a stock cooler that will have pre applied thermal paste. If you are using a stock cooler
+                    not included with your CPU, you may have to apply your own thermal paste if not pre applied on the cooler. Intel stock coolers should have 4 plastic pins on each corner with a notch at the top
+                    of the pins; rotate the notch so it points towards the fan then position the cooler on top of the CPU. The 4 pins should line up with 4 holes in the motherboard; once lined up, press down on the
+                    pins until you hear a click.</p>
+                    <p>Finally, make sure the cable to power the fan is not in the way of the fan and plug it into your motherboard's CPU fan header. This header is different for all motherboards
+                    so refer to the manufacturers guide for the location of this and any header in the rest of this guide.</p>
+                    <img id = "intelCooler" src="../BuildingPCPages/imagesBuilding/cpuimage2.jpg" alt = "Intel CPU Cooler" class="center">
+                </div>
+                <div id="AMD"><p>For AMD CPUs the motherboard socket should have a small metal lever around the CPU socket. Press down on that lever and pull it gently to the side to 
+                    open the CPU tray. Now remove the CPU from it's packaging. Make sure to <strong>hold it by the edges</strong> as touching the pins on the bottom or the top will damage it.Now locate an
+                    arrow on one of the corners of the CPU, there will be a corresponding arrow on the CPU socket indicating how to align the CPU. Once you have opened the socket and orientated
+                    the CPU, drop it into the socket:<em> it should fit effortlessly</em>..Now close the CPU tray and then push the lever back down to close the CPU 
+                    tray. This part might require a little more pressure. Now your CPU is installed and we are ready to install the cooler.</p>
+                    <img id = "AMDCPU" src="../BuildingPCPages/imagesBuilding/cpuimage3.jpg" alt = "AMD CPU" class="center">
+                    <p>Most AMD CPUs come with a stock cooler that will have pre applied thermal paste. If you are using a stock cooler
+                    not included with your CPU, you may have to apply your own thermal paste if not pre-applied on the cooler.
+                    Now depending on the cooler it may have <em>retention clips</em> or have <em>4 spring screws</em> which have separate installation processes.</p>
+                    <h3>Installing a cooler without retention clips</h3>
+                    <p>This installation process is fairly simple. There are only two orientations AMD coolers can be installed in as the 4 screws form a rectangle. Find one of these orientations and screw the cooler until the screws won't turn anymore.</p>
+                    <img id = "AMDCooler" src="../BuildingPCPages/imagesBuilding/cpuimage4.jpg" alt = "AMD Cooler" class="center">
+                    <h3>Installing a cooler with retention clips</h3>
+                    <p>This installation process does not involve using any screws. It is important to note that <strong>not all AMD motherboards</strong> have a socket for these retention clips so make sure your parts are compatible!
+                    First make sure that the <strong>cam lever</strong> on the cooler is unlocked. Then line up the retention clips with the retention hooks on the motherboard and <em>one at a time</em> push the retention clip until both clips are hooked. Once the cooler is in place, <strong>lock</strong>
+                    the cam lever and the cooler will be installed.</p>
+                    <div class="flexBox">
+                    <img id = "AMDClip" src="../BuildingPCPages/imagesBuilding/cpuimage6.jpg" alt = "AMD Cooler Retention Clip" class="center">
+                    <img id = "AMDUnlock" src="../BuildingPCPages/imagesBuilding/cpuimage7.jpg" alt = "AMD unlocker cam switch" class="center">
+                    <img id = "AMDLock" src="../BuildingPCPages/imagesBuilding/cpuimage8.jpg" alt = "AMD locked cam switch" class="center">
+                    </div>
+                    <h4>From left to right: The retention clip on the retention hook, the cam lever unlocked, the cam lever locked</h4>
+                    <p>Finally, make sure the cable to power the fan is not in the way of the fan and plug it into your motherboard's CPU fan header. If your cooler has RGB then you will also need to plug an RGB cable into the corresponding header on the motherboard.</p>
+                </div>
+            </div>
+            <p style="text-align:center">Click the next button to move on to the next step: Installing RAM</p>
           </div>
-          
           <a href="buildingHomePage.html" class="previous">&laquo; Previous</a>
           <a href="installingRAM.html" class="next">Next &raquo;</a>
           </main>
@@ -67,6 +111,10 @@
             <p>Designed by Taha Haveliwala</p>
             <p>Sarvesh Somasundarum</p>
             <p>Arul Sharma</p>
+            <p class = 'sources'>Image Sources: <a href ="https://www.microcenter.com/tech_center/article/5715/how-to-troubleshoot-a-newly-built-pc-that-will-not-post" class="footerlink">Intel CPU</a>
+                <a href ="https://www.eteknix.com/how-to-install-an-am4-amd-processor/" class="footerlink">AMD CPU</a>
+                <a href ="https://www.amd.com/en/support/kb/faq/cpu-7" class="footerlink">AMD Fan Installation</a>
+            </p>
         </footer>
 
 
