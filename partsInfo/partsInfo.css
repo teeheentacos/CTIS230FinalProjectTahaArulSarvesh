@@ -287,6 +287,9 @@ a.footerlink:hover{
   margin-right: 5%;
 }
 
-#expList {
-  display: none;
+.btnImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
