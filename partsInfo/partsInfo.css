@@ -122,14 +122,15 @@ header p{
 /*Nav bar at the top of every page*/
 div.flexBox{
   display:flex;
-  margin-left: 29%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 div.nav {
   font-size: 1.3em;
   font-family:Arial;
   text-align:center;
-  width:10%;
+  width:100%;
   border-style:solid;
   border-color:black;
   background-color:lightsteelblue;
@@ -145,7 +146,7 @@ div.nav:hover{
 /* Custom font for title*/
 @font-face {
   font-family: myfont;
-  src: url('myFont.ttf');
+  src: url('myFont.TTF');
 }
 
 /*Body rules */
@@ -178,6 +179,7 @@ padding:20px;
 text-align: center;
 color: white;
 font-size: 1.25em;
+margin-top:20px;
 }
 
 .sources {
@@ -245,6 +247,21 @@ a.footerlink:hover{
 }
 
 #typesOfStorage {
+  width: 45%;
+  float: right;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#mobo {
+  width: 30%;
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 10px;
+}
+
+#moboPorts {
   width: 45%;
   float: right;
   margin-left: 5%;
