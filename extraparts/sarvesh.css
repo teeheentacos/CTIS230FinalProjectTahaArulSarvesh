@@ -179,6 +179,7 @@ body{
 }
 
 footer{
+  margin-top: 20px;
   background-color:rgb(15, 98, 182);
   padding:20px;
   text-align: center;
@@ -200,4 +201,17 @@ div.pictures {
 div.content p{
   margin-left: 5%;
   margin-right: 5%;
+}
+
+a.footerlink{
+  text-decoration: none;
+  color: white;
+}
+
+a.footerlink:hover{
+  color:lightslategray;
+}
+
+.sources {
+  font-size: 0.6em;
 }
