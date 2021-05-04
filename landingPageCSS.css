@@ -195,9 +195,9 @@
     color:lightslategray;
   }
   
-#mainImg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-}
+    #mainImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }
