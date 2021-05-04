@@ -122,28 +122,31 @@
   }
 
 /*Nav bar at the top of every page*/
-  div.buttonBox{
-    display:flex;
-    margin-left: 29%;
+div.buttonBox{
+  display:flex;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 div.nav {
-    font-size: 1.3em;
-    font-family:Arial;
-    text-align:center;
-    width:10%;
-    border-style:solid;
-    border-color:black;
-    background-color:lightsteelblue;
-    border-radius: 2em;
-    margin-right:10px;
-    margin-left:10px;
-    padding-top: 10px;
-  }
+  font-size: 1.3em;
+  font-family:Arial;
+  text-align:center;
+  width:50%;
+  border-style:solid;
+  border-color:black;
+  background-color:lightsteelblue;
+  border-radius: 2em;
+  margin-right:10px;
+  margin-left:10px;
+  padding-top: 10px;
+}
 
   div.nav:hover{
     background-color:lightslategrey;
   }
+
+  
 /* Custom font for title*/
 @font-face {
     font-family: myfont;
@@ -205,6 +208,10 @@ img.center{
   margin-right: auto;
 }
 
+div.content h2{
+  margin-left:3%;
+}
+
 /*rules for the CPU page*/
 
 button#IntelButton , button#AMDButton{
@@ -217,12 +224,21 @@ button#IntelButton , button#AMDButton{
   margin-top: 3%;
 }
 
+div#CPUButtons{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 button#IntelButton{
-  margin-left:15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 button#AMDButton{
-  margin-left:27%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 button#IntelButton:hover , button#AMDButton:hover{
@@ -237,11 +253,34 @@ div#cpuLayout{
   margin-top: 3%;
 }
 
+img#intelCPU{
+  width:25%;
+}
+img#intelCooler{
+  width:35%;
+}
+img#AMDCPU{
+  width:70%;
+}
+img#AMDCooler, img#AMDClip, img#AMDUnlock, img#AMDLock{
+  width:30%;
+}
+
+/*rules for RAM page*/
+img#RAMUnlock{
+  width:15%;
+}
+img#RAM{
+  width:35%;
+}
+
 /* rules for the installing MoBo page*/
 div.caseBox{
   display: grid;
   grid-template-columns:30% 30% 30%;
-  margin-left:20%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
 
 }
 
@@ -272,6 +311,10 @@ img#ATXMOBO, img#MicroATXMOBO, img#MiniITXMOBO{
   height:auto;
   display:none;
 }
+
+img#JFP1Diagram{
+  width:25%;
+}
 /*rules for storage page */
 img#sataCable{
   width:20%;
@@ -292,6 +335,10 @@ img#GPU{
 /*rules for PSU page*/
 ul#PSUList{
   margin-left:15%;
+}
+
+img#PSU{
+  width:37%;
 }
 
 /*rules for turning on page*/
