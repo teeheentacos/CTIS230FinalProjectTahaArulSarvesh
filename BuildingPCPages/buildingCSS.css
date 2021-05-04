@@ -266,6 +266,14 @@ img#AMDCooler, img#AMDClip, img#AMDUnlock, img#AMDLock{
   width:30%;
 }
 
+div#Intel{
+  display:none;
+}
+
+div#AMD{
+  display:none;
+}
+
 /*rules for RAM page*/
 img#RAMUnlock{
   width:15%;
@@ -281,7 +289,17 @@ div.caseBox{
   margin-left:auto;
   margin-right:auto;
   text-align:center;
+}
 
+img#ATXMOBO, img#MicroATXMOBO, img#MiniITXMOBO{
+  position: absolute;
+  width:15%;
+  height:auto;
+  display:none;
+}
+
+img#JFP1Diagram{
+  width:25%;
 }
 
 /*rules for the setting up page*/
@@ -304,17 +322,7 @@ img#M2Unlock, img#M2Lock{
   height:30%;
 }
 
-/*rules of mobo page*/
-img#ATXMOBO, img#MicroATXMOBO, img#MiniITXMOBO{
-  position: absolute;
-  width:15%;
-  height:auto;
-  display:none;
-}
 
-img#JFP1Diagram{
-  width:25%;
-}
 /*rules for storage page */
 img#sataCable{
   width:20%;
