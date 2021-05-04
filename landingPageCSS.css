@@ -1,15 +1,295 @@
-div.flexBox{
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color:lightslategrey;
+    font-family: Arial;
+  }
+    
+    /* Links inside the navbar */
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+      /* The dropdown container */
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      /* Dropdown button */
+      .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+      
+      /* Add a red background color to navbar links on hover */
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+      }
+      
+      /* Dropdown content (hidden by default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      /* Add a grey background color to dropdown links on hover */
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      /* next and back buttons */
+      .next , .previous{
+        text-decoration: none;
+        display: block;
+        padding: 8px 16px;
+      }
+    
+      .next:hover , .previous:hover{
+        background-color:lightslategrey;
+        color:white;
+      }
+      
+      .previous {
+        background-color: #f1f1f1;
+        color: black;
+        text-align: center;
+        width:12%;
+        margin-left:44%;
+      }
+      
+      .next {
+        background-color: #04AA6D;
+        color: white;
+        text-align: center;
+        width:12%;
+        margin-left:44%;
+      }
+  
+  /*Rules for header */
+  header{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color:rgb(15, 98, 182);
+  }
+  
+  header a{
+    color:black;
+    text-decoration: none;
+  }
+  
+  header a:hover{
+    color:white;
+  }
+  
+  header p{
+    text-align: center;
+    color:white;
+    font-size: 5em;
+    font-family: myfont;
+  }
+  
+  /*Nav bar at the top of every page*/
+  div.flexBox{
     display:flex;
-}
-
-div.nav {
-    font-size: 1.9em;
-    font-family:'Courier New', Courier, monospace;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  
+  div.nav {
+    font-size: 1.3em;
+    font-family:Arial;
     text-align:center;
-    width:100%;
+    width: 50%;
     border-style:solid;
     border-color:black;
-    background-color:rgb(22, 22, 110);
-    padding:20px;
-    color:white;
+    background-color:lightsteelblue;
+    border-radius: 2em;
+    margin-right:10px;
+    margin-left:10px;
+    padding-top: 10px;
+  }
+  
+  div.nav:hover{
+    background-color:lightslategrey;
+  }
+  /* Custom font for title*/
+  @font-face {
+    font-family: myfont;
+    src: url('partsInfo/myFont.TTF');
+  }
+  
+  /*Body rules */
+  
+  div.content{
+  margin-left: 10%;
+  margin-right:10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-family: Arial;
+  border-style: outset;
+  border-color:rgb(15, 98, 182);
+  border-width: 6px;
+  background-color: white;
+  font-size:2em;
+  }
+  
+  div.content p{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  body{
+  background-color:lightgrey
+  }
+  
+  footer{
+  background-color:rgb(15, 98, 182);
+  padding:20px;
+  text-align: center;
+  color: white;
+  font-size: 1.25em;
+  margin-top:20px;
+  }
+  
+  .sources {
+    font-size: 0.6em;
+  }
+  
+  a.footerlink{
+    text-decoration: none;
+    color: white;
+  }
+  
+  a.footerlink:hover{
+    color:lightslategray;
+  }
+  
+  #parts {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  #cpu {
+    width: 30%;
+    float: right;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  #cpuFan {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
+  #ram {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
+  #gpu {
+    width: 50%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 10px;
+  }
+  
+  #gpu2 {
+    width: 45%;
+    float: right;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  #storage {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 10px;
+  }
+  
+  #typesOfStorage {
+    width: 45%;
+    float: right;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  #mobo {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 10px;
+  }
+  
+  #moboPorts {
+    width: 25%;
+    float: right;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  #psu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  #cases {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  .btn {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .btnImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
