@@ -170,6 +170,16 @@ h3 {
   text-align:center;
 }
 
+button#buttons {
+  width: 20%;
+  border-color:rgb(15, 98, 182);
+  background-color: antiquewhite;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  margin-bottom: 15px;
+}
+
 h2 {
   text-align: center;
 }
@@ -214,4 +224,8 @@ a.footerlink:hover{
 
 .sources {
   font-size: 0.6em;
+}
+
+div.pppimages {
+  text-align: center;
 }

@@ -4,6 +4,7 @@
 		<meta content="charset=utf-8">
 		<link rel="stylesheet" href="../extraparts/sarvesh.css">
 		<title>How To Pick Parts</title>
+		<script src="ppp.js" defer></script>
 	</head>
 
     <body>
@@ -44,85 +45,34 @@
             </p>
         </div>
 
-        <div class = "about">
-            <h3>What is PC Part Picker</h3>
+        <h3>What is PC Part Picker</h3>
+        <button id="buttons" onclick="about()">About</button>
+        <div id = "about"></div>
 
-            <p id = "aboutppp">
-                PC Part Picker is a website that is designed to help you pick and choose
-                the components you want in order to build your PC. It has a helpful builder
-                section to assist you in picking your parts, a published builds section to
-                gain inspiration from other people's builds, and a section for you to browse parts such as sepecific 
-                CPUs or GPUS or motherboards.
+        <h3>Logging In</h3>
+        <button id="buttons" onclick="show1()">Logging In</button>
+        <div id = "section1"></div>
 
-                <p>
-                    The cool part about PC Part Picker is that the builder section comes 
-                    with helpful tools such as compatability checker, a section that lets
-                    you select from the catalog for each of the primary parts, (which you can see in the parts detail),
-                    it automatically adds up the price of each of your components so that you can see a total
-                    at the bottom, it shows you the estimated wattage that the machine will consume, and it also lets you add secondary components such as 
-                    keyboards, mice, monitors, and operating systems. If you create an account on the website,
-                    you can even publish and save your custom parts lists.
-                </p>
+        <h3>System Builder</h3>
+        <button id="buttons" onclick="show2()">System Builder</button>
+        <div id = "section2"></div>
 
-                <p>
-                    This guide will go through the steps of creating a parts list in pcpartpicker and tips 
-                    on using the sorting and other features.
-                </p>
-            </p>
-        </div>
+        <h3>Build Guides</h3>
+        <button id="buttons" onclick="show3()">Build Guides</button>
+        <div id = "section3"></div>
 
-        <div id = "section1">
-            <h3>Logging In</h3>
-
-            <p>
-                Logging into the website allows you to save parts lists that you work on. 
-            </p>
-        </div>
-
-        <div id = "section2">
-            <h3>System Builder</h3>
-
-            <p>
-                This section will be about the System Builder section which allows you 
-                to build your list. It will have a subsection about each important topic such as 
-                picking parts using sorting and the add from filter, what the estimated wattage means,
-                and what the compatability issues could mean and how to fix them.
-            </p>
-        </div>
-
-        <div id = "section3">
-            <h3>Build Guides</h3>
-
-            <p>
-                This section will be about the Build Guides section which
-                shows you some builds based on what the purpose of the PC will be. It will 
-                explain the benefits of choosing a build from one of these guides and also 
-                the downsides of choosing one of these builds.
-            </p>
-        </div>
-
-        <div id = "section4">
-            <h3>Completed Builds</h3>
-
-            <p>
-                This section is really similar to the previous section but it will talk 
-                about completed builds made by other users of the website. It will also 
-                talk about the benefits and downsides to using these builds.
-            </p>
-        </div>
+        <h3>Completed Builds</h3>
+        <button id="buttons" onclick="show4()">Completed Builds</button>
+        <div id = "section4"></div>
         
-        <div id = "section5">
-            <h3>Tips</h3>
-
-            <p>
-                This section is tips and tricks that we have used in our own builds.
-            </p>
-        </div>
+        <h3>Tips</h3>
+        <button id="buttons" onclick="tips()">Tips</button>
+        <div id = "section5"></div>
     </div>
 
     <footer>
         <p>Designed by Taha Haveliwala</p>
-        <p>Sarvesh Somasundarum</p>
+        <p>Sarvesh Somasundaram</p>
         <p>Arul Sharma</p>
     </footer>
 
