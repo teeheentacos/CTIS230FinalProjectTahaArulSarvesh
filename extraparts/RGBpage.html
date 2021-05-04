@@ -7,26 +7,26 @@
 	</head>
 
     <body>
-        <header class="headerflex" >
-            <div class="flexBox">
-                <div class="nav">
-                    <a href="../landingPage.html">Home Page</a>
-                </div>
-                <div class="nav">
-                    <a href="../partsInfo/partsGeneralInfo.html">The Main Components of a PC</a>
-                </div>
-                <div class="nav">
-                    <a href="../PCpartpicker/HowToPickParts.html">Picking the right parts</a>
-                </div>
-                <div class = "nav">
+        <header>
+            <p>Ultimate PC Building Guide</p>
+              <div class="flexBox">
+                  <div class="nav">
+                      <a href="../landingPage.html">Home Page</a>
+                  </div>
+                  <div class="nav">
+                      <a href="../partsInfo/partsGeneralInfo.html">The Main Components of a PC</a>
+                  </div>
+                  <div class="nav">
+                      <a href="../PCpartpicker/HowToPickParts.html">Picking the right parts</a>
+                  </div>
+                  <div class = "nav">
                     <a href ="../BuildingPCPages/buildingHomePage.html">Building the PC</a>
-                </div>
-                <div class = "nav">
-                    <a href ="../extraparts/ExtraPartsHome.html">Extra Customization
-                    </a>
-                </div>
-            </div>
-        </header>
+                  </div>
+                  <div class = "nav">
+                      <a href ="../extraparts/ExtraPartsHome.html">Extra Customization</a>
+                  </div>
+              </div>
+          </header>
 
         <div class="navbar">
             <a href="ExtraPartsHome.html">General Info</a>
@@ -39,6 +39,7 @@
                 <a href="RGBpage.html">RGB</a>
                 <a href="ThermalPastePage.html">Thermal Paste</a>
                 <a href="FansPage.html">Fans</a>
+                <a href="RadiatorPage.html">Radiators</a>
                 <a href="KeyboardsandMicePage.html">Accessories</a>
               </div>
             </div>
@@ -46,8 +47,14 @@
 
         <br>
 
+        <div class="content">
+
         <div class = "rgb">
-            <h2>RGB</h2>
+            <h2 id="rgbheader">
+                <span style="color: red">R</span>
+                <span style="color: green">G</span>
+                <span style="color: blue">B</span>
+            </h2>
 
             <p id = "rgbintro">
                 RGB is an abbreviation of Red, Green, and Blue. RGB lighting is a bunch
@@ -58,13 +65,40 @@
                     RGB lighting can be found in many different forms, some cases
                     come with them built in, you can buy RGB strips to stick around the case, 
                     RGB also comes in fans, GPUs, RAM sticks, on the actual motherboard, and you can 
-                    even get it on water coolers. Adding these RGB elements won't increase your energy usage/wattage, 
-                    but it will increase the cost of the components quite a bit.
+                    even get it on water coolers. Adding these RGB elements won't significantly increase your energy usage/wattage, 
+                    but it will increase the cost of the components quite a bit since RGB components are quite expensive
+                    compared to the normal version of the same part.
                 </p>
             </p>
         </div>
         
-        add images of the objects in here
+        <div class="pictures">
+            <div class="rgbpic">
+                <img id="rgblightsrip" src="rgb.jpg" alt="RGB light strips">
+                <h3>RGB light strips</h3> 
+            </div>
+    
+            <div class="keyboardrgb">
+                <img id="rgbkeyboard" src="rgbkeyboard.jpg" alt="RGB keyboard">
+                <h3>RGB keyboard</h3> 
+            </div>
+
+            <div class="fansrgb">
+                <img id="rgbfan" src="fans.jpg" alt="RGB fan">
+                <h3>RGB fan</h3> 
+            </div>
+
+            <div class="gpurgb">
+                <img id="rgbgpu" src="gpu.jpg" alt="RGB GPU">
+                <h3>RGB GPU</h3> 
+            </div>
+
+            <div class="ramrgb">
+                <img id="rgbram" src="ram.jpg" alt="RGB RAM">
+                <h3>RGB RAM</h3> 
+            </div>
+        </div>
+    </div>
 
         <a href="ExtraPartsHome.html" class="previous">&laquo; Previous</a>
         <a href="ThermalPastePage.html" class="next">Next &raquo;</a>
