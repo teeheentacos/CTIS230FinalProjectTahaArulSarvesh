@@ -194,6 +194,10 @@ a.footerlink:hover{
   color:lightslategray;
 }
 
+div.flexBox{
+  display: flex;
+}
+
 #parts {
   display: block;
   margin-left: auto;
