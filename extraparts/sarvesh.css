@@ -229,3 +229,33 @@ a.footerlink:hover{
 div.pppimages {
   text-align: center;
 }
+
+
+@media (max-width: 1000px) {
+  div.content{
+    font-size:1.5em;
+    }
+    
+    div.content p{
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    
+  @media screen and (orientation:landscape) {
+   
+  }
+}
+
+@media (max-width: 500px) {
+  div.content{
+    margin-left: 2%;
+    margin-right:2%;
+    font-size:1.2em;
+    }
+    
+    div.content p{
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+
+}
