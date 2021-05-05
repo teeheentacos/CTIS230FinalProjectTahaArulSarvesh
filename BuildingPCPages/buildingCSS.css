@@ -246,12 +246,12 @@ button#IntelButton:hover , button#AMDButton:hover{
   border-color:rgb(15, 98, 182);
 }
 
-div#cpuLayout{
+/*div#cpuLayout{
   display: grid;
   grid-template-columns:50% 50% ;
   text-align: center;
   margin-top: 3%;
-}
+}*/
 
 img#intelCPU{
   width:25%;
@@ -268,10 +268,12 @@ img#AMDCooler, img#AMDClip, img#AMDUnlock, img#AMDLock{
 
 div#Intel{
   display:none;
+  width:50%;
 }
 
 div#AMD{
   display:none;
+  width:50%;
 }
 
 /*rules for RAM page*/
@@ -358,3 +360,4 @@ a#windowslink{
 a#windowslink:hover{
   color:lightsteelblue;
 }
+
